@@ -32,6 +32,14 @@ export const CheckResult = z.object({
 });
 export type CheckResult = z.infer<typeof CheckResult>;
 
+// Full JSON body returned by POST /api/check on success.
+export type CheckResponse = {
+  mode: "live" | "mock" | "fallback";
+  city: { id: string; name: string; nameLocal?: string };
+  disclaimer: string;
+  result: CheckResult;
+};
+
 // Shape of a city rules pack in src/data/cities/<id>.json.
 export type CityRules = {
   id: string;

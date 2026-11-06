@@ -44,6 +44,6 @@ export function mockCheck(city: CityRules, description: string): CheckResult {
           },
     ],
     estimatedTimeline: `About ${Math.ceil(longestDays / 7)}–${Math.ceil((longestDays * 1.5) / 7)} weeks if steps run in parallel.`,
-    nextStep: `Get a copy of the building use permit and confirm the zoning for your address with ${permits[0].agency}.`,
+    nextStep: "Get a copy of the building use permit (使用執照) for your address and check its zoning before you sign anything.",
   };
 }

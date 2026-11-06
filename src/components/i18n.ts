@@ -1,0 +1,48 @@
+export type Lang = "en" | "zh";
+
+export const t = {
+  en: {
+    tagline: "Know which permits you need before you file.",
+    intro:
+      "Describe what you want to build, open or change. PermitPilot lists the permits, offices, documents and red flags for your project.",
+    label: "Your project",
+    placeholder: "e.g. I want to open a 20-seat café with a small kitchen on the 1st floor of an old apartment in Da'an.",
+    examples: "Try an example",
+    submit: "Check my project",
+    checking: "Reading the city's rules…",
+    permits: "Permits you likely need",
+    documents: "Documents",
+    days: "days",
+    redFlags: "Red flags",
+    severity: { high: "High", medium: "Medium", low: "Low" },
+    timeline: "Estimated timeline",
+    nextStep: "Do this first",
+    modes: { live: "AI answer", mock: "Demo mode", fallback: "AI unavailable, showing demo answer" },
+    error: "Something went wrong. Please try again.",
+  },
+  zh: {
+    tagline: "申請之前，先知道你需要哪些許可。",
+    intro: "描述你想蓋、想開或想改的東西。PermitPilot 會列出你需要的許可、承辦機關、文件與潛在問題。",
+    label: "你的計畫",
+    placeholder: "例如：在大安區老公寓一樓開一間 20 個座位的咖啡廳，有簡單廚房。",
+    examples: "試試範例",
+    submit: "檢查我的計畫",
+    checking: "正在讀取城市法規…",
+    permits: "你可能需要的許可",
+    documents: "應備文件",
+    days: "天",
+    redFlags: "注意事項",
+    severity: { high: "高", medium: "中", low: "低" },
+    timeline: "預估時程",
+    nextStep: "第一步",
+    modes: { live: "AI 回答", mock: "示範模式", fallback: "AI 暫時無法使用，顯示示範回答" },
+    error: "發生錯誤，請再試一次。",
+  },
+} as const;
+
+export const EXAMPLES = [
+  "在大安區老公寓一樓開一間 20 個座位的咖啡廳，有簡單廚房",
+  "Renovate my apartment and add a rooftop structure in Zhongshan District",
+  "Open a home-based English tutoring class for 10 kids",
+  "Put up a large LED sign outside my shop on Zhongxiao East Road",
+];
