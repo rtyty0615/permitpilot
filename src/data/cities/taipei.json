@@ -1,0 +1,85 @@
+{
+  "id": "taipei",
+  "name": "Taipei",
+  "nameLocal": "臺北市",
+  "country": "TW",
+  "disclaimer": "Demo-grade, simplified rules. Not legal advice. Always confirm with the responsible office.",
+  "permits": [
+    {
+      "id": "business-registration",
+      "name": "Business registration",
+      "nameLocal": "商業登記",
+      "agency": "Department of Economic Development, Commerce Office",
+      "agencyLocal": "臺北市政府產業發展局 商業處",
+      "appliesWhen": "Opening any shop, café, restaurant, studio or other for-profit business.",
+      "documents": ["Owner ID", "Proof of right to use the premises (lease or ownership)", "Business name and scope of business"],
+      "typicalDays": 7
+    },
+    {
+      "id": "change-of-use",
+      "name": "Change of building use permit",
+      "nameLocal": "變更使用執照",
+      "agency": "Department of Urban Development, Construction Management Office",
+      "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
+      "appliesWhen": "Using a space for a different purpose than its registered use, e.g. turning a residential unit into a café, restaurant, shop or classroom.",
+      "documents": ["Building use permit (使用執照) copy", "Floor plans", "Architect's certification", "Fire safety plan"],
+      "typicalDays": 45
+    },
+    {
+      "id": "interior-renovation",
+      "name": "Interior renovation review permit",
+      "nameLocal": "室內裝修審查許可",
+      "agency": "Department of Urban Development, Construction Management Office",
+      "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
+      "appliesWhen": "Changing partitions, ceilings or fixed fittings in a building used by the public, or in residential buildings of 6+ floors.",
+      "documents": ["Renovation drawings by a licensed professional", "Building use permit copy", "Owner consent"],
+      "typicalDays": 21
+    },
+    {
+      "id": "food-business-registration",
+      "name": "Food business registration",
+      "nameLocal": "食品業者登錄",
+      "agency": "Department of Health",
+      "agencyLocal": "臺北市政府衛生局",
+      "appliesWhen": "Preparing, selling or serving food or drinks to the public.",
+      "documents": ["Business registration", "Kitchen layout", "Staff health check records"],
+      "typicalDays": 14
+    },
+    {
+      "id": "fire-safety",
+      "name": "Fire safety equipment review and inspection",
+      "nameLocal": "消防安全設備審查及查驗",
+      "agency": "Fire Department",
+      "agencyLocal": "臺北市政府消防局",
+      "appliesWhen": "Change of use, renovation, or opening a venue where the public gathers (cafés, restaurants, classrooms).",
+      "documents": ["Fire safety equipment drawings", "Equipment specs (extinguishers, alarms, exit signs)"],
+      "typicalDays": 20
+    },
+    {
+      "id": "signboard",
+      "name": "Signboard / outdoor advertisement permit",
+      "nameLocal": "招牌廣告物許可",
+      "agency": "Department of Urban Development, Construction Management Office",
+      "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
+      "appliesWhen": "Installing a large, protruding, illuminated or LED sign on a building facade or rooftop.",
+      "documents": ["Sign design drawing with size and position", "Structural safety certification", "Building owner consent"],
+      "typicalDays": 14
+    },
+    {
+      "id": "cram-school",
+      "name": "Short-term tutoring school registration",
+      "nameLocal": "短期補習班立案",
+      "agency": "Department of Education",
+      "agencyLocal": "臺北市政府教育局",
+      "appliesWhen": "Teaching groups of students for a fee on a regular basis (language, academic or arts classes).",
+      "documents": ["Teacher qualifications", "Floor plan with classroom area per student", "Fire safety and building use compliance"],
+      "typicalDays": 30
+    }
+  ],
+  "zoningNotes": [
+    "Residential zones (住宅區, 住一 to 住四) restrict commercial use. Restaurants and cafés are usually limited by floor area and floor level, and are easiest on the ground floor.",
+    "Rooftop additions (頂樓加蓋) without a permit are illegal structures (違章建築) and can be reported and demolished.",
+    "Older walk-up apartments often lack the fire exits or ventilation that a change to commercial use requires.",
+    "Signs on main roads must fit the facade and must not block fire escape routes or windows."
+  ]
+}

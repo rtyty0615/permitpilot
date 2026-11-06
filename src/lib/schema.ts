@@ -1,0 +1,53 @@
+import { z } from "zod";
+
+// What the browser sends to POST /api/check.
+export const CheckRequest = z.object({
+  city: z.string().regex(/^[a-z-]+$/, "Invalid city id"),
+  description: z.string().trim().min(10, "Describe your project in a bit more detail").max(1000),
+});
+export type CheckRequest = z.infer<typeof CheckRequest>;
+
+// What /api/check returns. The LLM's output must match this shape too.
+export const CheckResult = z.object({
+  summary: z.string(),
+  permits: z.array(
+    z.object({
+      name: z.string(),
+      nameLocal: z.string().optional(),
+      agency: z.string(),
+      why: z.string(),
+      documents: z.array(z.string()),
+      estimatedDays: z.number().optional(),
+    }),
+  ),
+  redFlags: z.array(
+    z.object({
+      severity: z.enum(["high", "medium", "low"]),
+      issue: z.string(),
+      advice: z.string(),
+    }),
+  ),
+  estimatedTimeline: z.string(),
+  nextStep: z.string(),
+});
+export type CheckResult = z.infer<typeof CheckResult>;
+
+// Shape of a city rules pack in src/data/cities/<id>.json.
+export type CityRules = {
+  id: string;
+  name: string;
+  nameLocal?: string;
+  country: string;
+  disclaimer: string;
+  permits: {
+    id: string;
+    name: string;
+    nameLocal?: string;
+    agency: string;
+    agencyLocal?: string;
+    appliesWhen: string;
+    documents: string[];
+    typicalDays: number;
+  }[];
+  zoningNotes: string[];
+};
