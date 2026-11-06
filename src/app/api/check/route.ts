@@ -1,4 +1,6 @@
+import { checkWithLlm } from "@/lib/check";
 import { loadCity } from "@/lib/cities";
+import { llmConfigured } from "@/lib/llm";
 import { mockCheck } from "@/lib/mock";
 import { CheckRequest } from "@/lib/schema";
 
@@ -18,11 +20,22 @@ export async function POST(request: Request) {
     return Response.json({ error: `No rules pack for city "${cityId}"` }, { status: 404 });
   }
 
-  // Step 4 adds the real LLM call here when LLM_API_KEY is set.
-  const result = mockCheck(city, description);
+  let mode: "live" | "mock" | "fallback" = "mock";
+  let result;
+  if (llmConfigured()) {
+    try {
+      result = await checkWithLlm(city, description);
+      mode = "live";
+    } catch (err) {
+      // Keep the demo alive: log the real error on the server, answer with the mock.
+      console.error("LLM check failed:", err);
+      mode = "fallback";
+    }
+  }
+  result ??= mockCheck(city, description);
 
   return Response.json({
-    mode: "mock",
+    mode,
     city: { id: city.id, name: city.name, nameLocal: city.nameLocal },
     disclaimer: city.disclaimer,
     result,

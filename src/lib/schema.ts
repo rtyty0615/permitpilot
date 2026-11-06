@@ -13,11 +13,11 @@ export const CheckResult = z.object({
   permits: z.array(
     z.object({
       name: z.string(),
-      nameLocal: z.string().optional(),
+      nameLocal: z.string().nullish(),
       agency: z.string(),
       why: z.string(),
       documents: z.array(z.string()),
-      estimatedDays: z.number().optional(),
+      estimatedDays: z.number().nullish(),
     }),
   ),
   redFlags: z.array(
