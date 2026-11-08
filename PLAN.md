@@ -57,21 +57,10 @@ Mock mode means there is always something to demo.
 
 ## 90-second demo script
 
-1. **(0–15s) Problem:** "Opening a café in Taipei means up to N permits across M offices.
-   Most people find out what they missed when they get rejected."
-2. **(15–60s) Live:** Type "I want to open a 20-seat café with a small kitchen on the
-   1st floor of an old apartment building in Da'an." Show the permits, agencies, document checklist and
-   red flags (e.g. change of building use, fire safety).
-3. **(60–75s) Global:** Switch the city to San Francisco, run the same question, and show a different answer. "New city =
-   new rules pack, zero new code."
-4. **(75–90s) Vision:** "Start with residents, then sell the staff-side pre-check to
-   City Hall. 19,000 US cities still do this by hand."
+See [DEMO.md](DEMO.md) for the timed script, the pre-recording checklist and the live-demo fallback.
 
 ## Test inputs
 
-- 在大安區老公寓一樓開一間 20 個座位的咖啡廳，有簡單廚房
-- Renovate my apartment and add a rooftop structure in Zhongshan District
-- Open a home-based English tutoring class for 10 kids
-- Put up a large LED sign outside my shop on Zhongxiao East Road
+The example buttons for each city live in its rules pack (`examples` in `src/data/cities/<city>.json`).
 
 > ⚠️ Demo-grade rules data: simplified and not legal advice. Say so on the page.
