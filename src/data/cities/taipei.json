@@ -3,7 +3,14 @@
   "name": "Taipei",
   "nameLocal": "臺北市",
   "country": "TW",
+  "useRecordName": "building use permit (使用執照)",
   "disclaimer": "Demo-grade, simplified rules. Not legal advice. Always confirm with the responsible office.",
+  "examples": [
+    "在大安區老公寓一樓開一間 20 個座位的咖啡廳，有簡單廚房",
+    "Renovate my apartment and add a rooftop structure in Zhongshan District",
+    "Open a home-based English tutoring class for 10 kids",
+    "Put up a large LED sign outside my shop on Zhongxiao East Road"
+  ],
   "permits": [
     {
       "id": "business-registration",
@@ -12,7 +19,11 @@
       "agency": "Department of Economic Development, Commerce Office",
       "agencyLocal": "臺北市政府產業發展局 商業處",
       "appliesWhen": "Opening any shop, café, restaurant, studio or other for-profit business.",
-      "documents": ["Owner ID", "Proof of right to use the premises (lease or ownership)", "Business name and scope of business"],
+      "documents": [
+        "Owner ID",
+        "Proof of right to use the premises (lease or ownership)",
+        "Business name and scope of business"
+      ],
       "typicalDays": 7
     },
     {
@@ -22,7 +33,12 @@
       "agency": "Department of Urban Development, Construction Management Office",
       "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
       "appliesWhen": "Using a space for a different purpose than its registered use, e.g. turning a residential unit into a café, restaurant, shop or classroom.",
-      "documents": ["Building use permit (使用執照) copy", "Floor plans", "Architect's certification", "Fire safety plan"],
+      "documents": [
+        "Building use permit (使用執照) copy",
+        "Floor plans",
+        "Architect's certification",
+        "Fire safety plan"
+      ],
       "typicalDays": 45
     },
     {
@@ -32,7 +48,11 @@
       "agency": "Department of Urban Development, Construction Management Office",
       "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
       "appliesWhen": "Changing partitions, ceilings or fixed fittings in a building used by the public, or in residential buildings of 6+ floors.",
-      "documents": ["Renovation drawings by a licensed professional", "Building use permit copy", "Owner consent"],
+      "documents": [
+        "Renovation drawings by a licensed professional",
+        "Building use permit copy",
+        "Owner consent"
+      ],
       "typicalDays": 21
     },
     {
@@ -42,7 +62,11 @@
       "agency": "Department of Health",
       "agencyLocal": "臺北市政府衛生局",
       "appliesWhen": "Preparing, selling or serving food or drinks to the public.",
-      "documents": ["Business registration", "Kitchen layout", "Staff health check records"],
+      "documents": [
+        "Business registration",
+        "Kitchen layout",
+        "Staff health check records"
+      ],
       "typicalDays": 14
     },
     {
@@ -52,7 +76,10 @@
       "agency": "Fire Department",
       "agencyLocal": "臺北市政府消防局",
       "appliesWhen": "Change of use, renovation, or opening a venue where the public gathers (cafés, restaurants, classrooms).",
-      "documents": ["Fire safety equipment drawings", "Equipment specs (extinguishers, alarms, exit signs)"],
+      "documents": [
+        "Fire safety equipment drawings",
+        "Equipment specs (extinguishers, alarms, exit signs)"
+      ],
       "typicalDays": 20
     },
     {
@@ -62,7 +89,11 @@
       "agency": "Department of Urban Development, Construction Management Office",
       "agencyLocal": "臺北市政府都市發展局 建築管理工程處",
       "appliesWhen": "Installing a large, protruding, illuminated or LED sign on a building facade or rooftop.",
-      "documents": ["Sign design drawing with size and position", "Structural safety certification", "Building owner consent"],
+      "documents": [
+        "Sign design drawing with size and position",
+        "Structural safety certification",
+        "Building owner consent"
+      ],
       "typicalDays": 14
     },
     {
@@ -72,7 +103,11 @@
       "agency": "Department of Education",
       "agencyLocal": "臺北市政府教育局",
       "appliesWhen": "Teaching groups of students for a fee on a regular basis (language, academic or arts classes).",
-      "documents": ["Teacher qualifications", "Floor plan with classroom area per student", "Fire safety and building use compliance"],
+      "documents": [
+        "Teacher qualifications",
+        "Floor plan with classroom area per student",
+        "Fire safety and building use compliance"
+      ],
       "typicalDays": 30
     }
   ],

@@ -40,13 +40,18 @@ export type CheckResponse = {
   result: CheckResult;
 };
 
+// What the page needs to know about each city to render the switcher.
+export type CityOption = { id: string; name: string; nameLocal?: string; examples: string[] };
+
 // Shape of a city rules pack in src/data/cities/<id>.json.
 export type CityRules = {
   id: string;
   name: string;
   nameLocal?: string;
   country: string;
+  useRecordName: string; // what the official record of a space's permitted use is called locally
   disclaimer: string;
+  examples: string[];
   permits: {
     id: string;
     name: string;

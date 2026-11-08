@@ -1,0 +1,78 @@
+{
+  "id": "san-francisco",
+  "name": "San Francisco",
+  "country": "US",
+  "useRecordName": "Certificate of Occupancy (the permitted use on file with DBI)",
+  "disclaimer": "Demo-grade, simplified rules. Not legal advice. Always confirm with the responsible department.",
+  "examples": [
+    "Open a 20-seat café with a small kitchen in a ground-floor storefront in the Mission",
+    "Add a rooftop deck to my house in the Sunset",
+    "Run English tutoring classes for 10 kids from my home in Richmond District",
+    "Put up an illuminated sign above my shop on Valencia Street"
+  ],
+  "permits": [
+    {
+      "id": "business-registration",
+      "name": "Business Registration Certificate",
+      "agency": "Office of the Treasurer & Tax Collector",
+      "appliesWhen": "Doing any business in San Francisco, including home-based businesses.",
+      "documents": ["Owner or entity information", "Business address", "Estimated payroll / gross receipts"],
+      "typicalDays": 7
+    },
+    {
+      "id": "change-of-use",
+      "name": "Change of use (Planning approval)",
+      "agency": "San Francisco Planning Department",
+      "appliesWhen": "Changing a space's use, e.g. retail to restaurant, or residential to commercial. Some districts require neighborhood notice or a Conditional Use hearing.",
+      "documents": ["Project application", "Floor plans and site plan", "Photos of the existing space"],
+      "typicalDays": 90
+    },
+    {
+      "id": "interior-renovation",
+      "name": "Building permit (alterations)",
+      "agency": "Department of Building Inspection (DBI)",
+      "appliesWhen": "Structural work, new walls, plumbing, electrical, kitchens, decks or rooftop additions.",
+      "documents": ["Plans by a licensed architect or engineer", "Permit application", "Title 24 energy forms where required"],
+      "typicalDays": 45
+    },
+    {
+      "id": "food-business-registration",
+      "name": "Health permit to operate (food facility)",
+      "agency": "Department of Public Health, Environmental Health",
+      "appliesWhen": "Preparing, selling or serving food or drinks to the public. Requires plan check before construction.",
+      "documents": ["Food facility plans and equipment list", "Menu", "Food safety manager certificate"],
+      "typicalDays": 30
+    },
+    {
+      "id": "fire-safety",
+      "name": "Fire plan review and Place of Assembly permit",
+      "agency": "San Francisco Fire Department (SFFD)",
+      "appliesWhen": "Commercial kitchens with hoods, renovations reviewed by DBI, or spaces where 50+ people gather.",
+      "documents": ["Fire protection plans", "Hood and suppression system specs", "Occupant load calculation"],
+      "typicalDays": 21
+    },
+    {
+      "id": "signboard",
+      "name": "Sign permit",
+      "agency": "Department of Building Inspection (DBI) with Planning review",
+      "appliesWhen": "Installing or changing a business sign, especially illuminated or projecting signs.",
+      "documents": ["Sign drawings with size, location and lighting", "Photos of the facade", "Property owner authorization"],
+      "typicalDays": 21
+    },
+    {
+      "id": "home-occupation",
+      "name": "Home-based business (home occupation) rules",
+      "agency": "San Francisco Planning Department",
+      "appliesWhen": "Running a business from your home. Limits apply to floor area, visitors, employees and signage.",
+      "documents": ["Business Registration Certificate", "Description of activity, hours and expected visitors"],
+      "typicalDays": 7
+    }
+  ],
+  "zoningNotes": [
+    "Residential districts (RH-1, RH-2) prohibit most commercial uses; a café or classroom there is usually not allowed.",
+    "Neighborhood Commercial (NC) districts allow restaurants, but a change of use can trigger 30-day neighborhood notification (Section 311) or a Conditional Use hearing.",
+    "Formula retail (11+ locations worldwide) needs Conditional Use authorization in most NC districts.",
+    "Rooftop decks and additions need a building permit and may need neighborhood notification; unpermitted work must be legalized before a sale.",
+    "Home-based businesses cannot have frequent client visits, outside employees or exterior signs beyond small limits."
+  ]
+}
